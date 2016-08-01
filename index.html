@@ -11,9 +11,11 @@
 <body>
 
 <div data-role="page">
-  <div data-role="header">
-    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
-    <h1>Welcome To My Homepage</h1></div>
+  <div data-role="header"data-position="fixed"> 
+   
+<img src="https://pbs.twimg.com/media/Cou2O6VWYAEkFVI.jpg" alt="Mountain View" style="width:115px;height:50px;">
+
+</div>
 
 <style>
 
@@ -27,7 +29,7 @@
 
 body *{
 margin: 0;
-
+ 
 font-family: "Arial" !important;
     font-weight: 100 !important;
 
@@ -73,7 +75,14 @@ li a:hover:not(.active) {
     color: red;
 
 }
-
+.sexy_line{ 
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
 
 </style>
 
@@ -83,9 +92,19 @@ li a:hover:not(.active) {
 
 <ul>
   <li><a class="active" href="#home">Social</a></li>
+<span class="sexy_line"></span>
   <li><a href="#Blogs">Reviews/listings</a></li>
+<span class="sexy_line"></span>
   <li><a href="#contact">Blogs</a></li>
+<span class="sexy_line"></span>
   <li><a href="#about">Forums</a></li>
+<span class="sexy_line"></span>
+<li><div class="mybutton">
+  <a href="http://homefabulo.us">
+  <button style="width:165px;height:50px; border:1px solid #30BDFF;background-color:#30BDFF;"><font size="3" color="white">Take a tour</font>
+  </button></a></li>
+  
+
 </ul>
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
@@ -146,6 +165,37 @@ nav {
 
 
 <center>
+<nav>
+<div data-role="main" class="ui-content">
+<a href="#link" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">
+<img src="data:image/jpeg;base64,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" alt="Mountain View" style="width:100px;height:100px;"><br>linked in</a></nav>
+
+<div data-role="popup" id="link" class="ui-content">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+      <div data-role="main" class="ui-content"><h1><center><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOL3Se2veqPpi4Mu6Mni9viviFmb1lI1Ol29XRBZU8Uwg8j2BB_6ldDA" alt="Mountain View" style="width:50px;height:50px;">
+linked in</h1></p>
+<button onclick="closeWin()">DONE</button>
+<div data-role="navbar">
+<ul>
+<li>
+<a onclick="linked()"data-icon="plus">More</a></li>
+
+        <li><a onclick="test2()" data-icon="minus">Test 2</a></li>
+        <li><a href="#" data-icon="delete">Delete</a></li>
+        <li><a href="#" data-icon="check">Like</a></li>
+        <li><a href="#" data-icon="info">Information</a></li>
+        <li><a href="#" data-icon="forward">Go Forward</a></li>
+        <li><a href="#" data-icon="back">Go Back</a></li>
+        <li><a href="#" data-icon="star">Star</a></li>
+        <li><a href="#" data-icon="gear">Options</a></li>
+        <li><a href="#" data-icon="gear">Search</a>
+</li>
+      </ul>
+
+</div>
+</div>
+</div>
+
 <nav>
 <div data-role="main" class="ui-content">
 <a href="#link" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">
